@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway' type='text/css' />
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <style>
+    * {margin: 0; padding: 0;}
+
+    h1 {
+		font-family: 'Raleway';
+		font-size: 35px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: bolder;
+		line-height: 26.4px;
+	}
+	
+	h2 {
+		font-family: 'Raleway';
+	}
+	h3 {
+		font-family: 'Raleway';
+		font-size: 16x;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 500;
+		color: black;
+     	text-shadow: none;
+	}
+
+	p {
+		font-family: 'Raleway';
+		font-size: 14px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 20px;
+	}
+
+	blockquote {
+		font-family: 'Raleway';
+		font-size: 21px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 30px;
+	}
+
+	pre {
+		font-family: 'Raleway';
+		font-size: 13px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 400;
+		line-height: 18.5714px;
+	}
+    
+    ul {
+      list-style-type: none;
+      float: left;
+      width: 50%;
+    }
+
+    li img {
+      float: left;
+      margin: 0 15px 0 0;
+      width: 17%;
+      height: 17%;
+    }
+
+    li p {
+      font-family: 'Raleway';
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      color: #29BBBB;
+      text-shadow: none;
+      float: right;
+      width: 80%;
+    }
+
+     li a {
+      font-family: 'Raleway';
+      font-size: 14px;
+      float:right; 
+      text-shadow:none; 
+    }
+
+    li {
+    	font-family: 'Raleway';
+      background: white;
+      padding: 5px;
+      overflow: auto;
+      font-size: 14px;
+    }
+
+    img {
+      width: 110px; 
+      height: 110px;
+    }
+
+  </style>
+</head>
+<body>
+  <div data-role="page" id="pageone">
+    <div data-role="header"><h1>GET THE FACTS</h1></div>
+    <div data-role="main" class="ui-content">
+    <form>
+      <input data-type="search" id="divOfuls-input">
+    </form>
+      <ul class="elements" data-filter="true" data-input="#divOfuls-input">
+        <li data-filtertext="environment genetics literacy">
+          <img src="black_woman_computercropped.jpg">
+          <h3>HEALTH TOOLS</h3>
+          <p>Through these tools and resources, including family history charts, advance care directives, and medical glossaries, you can better understand your health and prepare for the future. </p>
+          <a href="#pagetwo" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="slide">Find Out More</a>
+        </li>
+          
+        <li>
+          <img src="health-cancer-doctor-treatment.png" >
+          <h3>NAVIGATING THE HEALTHCARE SYSTEM</h3>
+          <p>Before, during, and after a healthcare appointment, you face several choices, from selecting your healthcare provider to deciding between treatment options. </p>
+          <a href="#pagethree" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="slide">Find Out More</a>
+        </li>
+
+        <li>
+          <img src="healthdisparities.png" >
+          <h3>HEALTH DISPARITIES</h3>
+          <p>Despite improvements, there still exists well-documented racial disparities in health in the United States, both in terms of physical and mental well-being and quality of healthcare received. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+
+        <li>
+          <img src="diabetes.jpg" >
+          <h3>HEALTH CONDITIONS</h3>
+          <p>There are a range of health conditions that affect the black community, from sickle cell anemia and breast cancer to diabetes and addiction.</p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+        <li>
+          <img src="blackfamilyblacklove.jpg" >
+          <h3>HEALTH OVER LIFE SPAN</h3>
+          <p>Children, teenagers, pregnant women, and the elderly, among other groups, face health issues specific to their stage in life. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="pagetwo" >
+    <div data-role="panel" id="panelone" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px; height=100%;"> 
+      <h2>FAMILY HISTORY</h2>
+      <p>Family history holds key information about your past and clues to your future health. By collecting your family's health history, you can learn what health problems you may be at increased risk for in the future and how to reduce your risks. Many of your physical traits (such as eye color, hair color, and height) are inherited. So, too, are risks for certain genetic conditions and health problems such as heart disease, diabetes, and some cancers. You may have noticed that some of your relatives are healthier and live longer than other relatives. You may also have noticed that some relatives have the same health problems. By collecting your family's health history, you can learn what health problems you may be at increased risk for in the future and how to reduce your risks. For instance, people at increased risk for heart disease may be able to reduce their risk through not smoking, regular exercise, and diet.</p>
+      </br>
+      <p>It is important to note that none of us knows or has access to complete family history information. Some families have little or no access to information. In some families, people remember experiences or diagnoses differently. Each family works with the information available to them. However, many families discover that, often, there are one or more members who are the unofficial historian(s) of the family. This historian can often assist in tracking down information.</p>
+      </br>
+      <p>Several tools have been developed and are available online to help families get started with medical histories:
+      <ul style="width:100%">
+        <li style="float:none"> IKnowDiabetes.org: <a href="https://drive.google.com/file/d/0B-5BlRqvViLfRDF2V2RQZjRZOEk/view?usp=sharing" target="_blank" style="float:none">Family Health History Tree</a></li>
+        <li style="float:none">Genetic Alliance: <a href="https://drive.google.com/file/d/0B-5BlRqvViLfVU9yNzNmUnpLVGc/view?usp=sharing" target="_blank" style="float:none">Guide to Family Health History</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfUTczQ0xVd2JvREk/view?usp=sharing" target="_blank" style="float:none">Guide to Understanding Genetics and Health </a></li>
+        <li style="float:none">Centers for Disease Control and Prevention: <a href="https://drive.google.com/file/d/0B-5BlRqvViLfU2VOZUsyQTMzVHM/view?usp=sharing" target="_blank" style="float:none">November is Family Health History Month</a>, <a href="http://www.cdc.gov/genomics/famhistory/resources/tools.htm" target="_blank" style="float:none">Family History Collection Tools</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfcGlrTW9GZlNHbmM/view?usp=sharing" target="_blank" style="float:none">FAQ on Family History</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfVmtmaHZ3Z3p0Z0k/view?usp=sharing" style="float:none" target="_blank">Genomics and Health</a></li>
+        <li style="float:none"> A web-based research tool can be used to assess a person's familial risk for six diseases: <a href="https://drive.google.com/file/d/0B-5BlRqvViLfX1NpVUh4bFluLVE/view?usp=sharing" style="float:none" target="_blank">Family Healthware</a></li>
+        <li style="float:none"> U.S. Department of Health and Human Services: <a href="https://drive.google.com/file/d/0B-5BlRqvViLfc0toX2FEX3VJRDQ/view?usp=sharing" target="_blank" style="float:none">Family Health Portrait Tool</a></li>
+        <li style="float:none"> Surgeon General's Family History Initiative: <a href="https://familyhistory.hhs.gov/FHH/html/index.html" target="_blank" style="float:none">Before You Start</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfZ3VwV2JLQU1fSnM/view?usp=sharing" target="_blank" style="float:none">General Overview</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfNkIyNlYxSi1yVUk/view?usp=sharing" target="_blank" style="float:none"> Portrait</a></li>
+      </ul>
+      </p>
+      <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="panel" id="paneltwo" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px; height=100%;"> 
+      <h2>ADVANCE CARE PLANNING</h2>
+      <p style="font-size:14px">Advance care planning is making decisions about the care you would want to receive if you happen to become unable to speak for yourself. These are your decisions to make, regardless of what you choose for your care, and the decisions are based on your personal values, preferences, and discussions with your loved ones.</p>
+      </br>
+      <p style="font-size:14px">Before you are in an accident or have an illness that leaves you unable to talk about your wishes, you can tell your family, friends and healthcare providers what your wishes and personal beliefs are about continuing or withdrawing medical treatments at the end of life.</p>
+      </br>
+      <p><b>Advance care planning includes:</b>
+          <ul style="width:100%">
+            <li style="float:none">Getting information on the types of life-sustaining treatments that are available.</li>
+            <li style="float:none">Deciding what types of treatment you would or would not want should you be diagnosed with a life-limiting illness.</li>
+            <li style="float:none">Sharing your personal values with your loved ones.</li>
+            <li style="float:none">Completing advance directives to put into writing what types of treatment you would or would not want should you be unable to speak for yourself.</li>
+          </ul>
+      </p>
+      </br>
+      <p> <b> Getting Started: </b>
+        <ul style="width:100%">
+          <li style="float:none"> Think about what kind of treatment you do or do not want in a medical emergency. It might help to talk with your doctor about how your present health conditions might influence your health in the future. </li>
+          <li style="float:none"> Decide if you want a healthcare proxy, someone like a family member or friend who can have authority over a wide range of decisions or a few specific ones in your medical care. </li>
+          <li style="float:none"> Make your wishes known and official with an advance directive that includes a living will and a durable power of attorney for healthcare. </li>
+          <li style="float:none"> Give copies of your advance directive to your healthcare proxy and doctor, and review your advance care planning decisions from time to time. </li>
+        </ul>
+      </p>
+      </br>
+      <p><b>Several tools have been developed and are available online to help families get started with advance care planning:</b>
+        <ul style="width:100%">
+          <li style="float:none"> A living will is a type of drafted document that specifies how you wish to be treated should you suffer an unrecoverable injury or illness where you can no longer speak on your own belahf. A living will lets you decide your own fate. <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfQzBJbXVlejM4LWZ4VjFzNkptRGk2RFBicGlF/view?usp=sharing" target="_blank">Living Wills: What Are They?</a>, <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfODlxM2xRUEl6VlJjci12WW9ha1FhNi1sZVU0/view?usp=sharing" target="_blank">Living Will - Health Care Decisions FAQs</a>, <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfYjh4LU9DNTBVRFhnZjhpSktMcHYxVnhLWlRv/view?usp=sharing" target="_blank">How to Use Free Living Will Forms</a></li>
+          <li style="float:none">With a signed Health Care Directive, you decide your Living Will, state your treatment wishes, and assign a Medical Power of Attorney, someone to act on your behalf regarding medical treatment. <a style="float:none" href="https://www.lawdepot.com/contracts/living-will-medical-power-of-attorney/#.Vm26u66rRTY" target="_blank">Health Care Directive Form from LawDepot.com</a>, <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfVWVYMVh3MHpZSkF0YjVlN2NXYjRvMS1keFNN/view?usp=sharing" target="_blank">Health Care Directive (Living Will) form</a></li>
+          <li><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNE0yLVl0VHAyYTQ4R2VGR3g4Z2FfdlZCR2Zr/view?usp=sharing" target="_blank">How I Wish to be Remembered: The Use of an Advance Care Planning Document in Adolescent and Young Adult Populations</a></li>
+           <li><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfWUYtOXl0Y1pHRk1CQ3dOdzBFamoyOGlLQUJF/view?usp=sharing" target="_blank">The Wisdom and Necessity of Focusing on Family</a></li>
+        </ul>
+      </p>      
+      <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="panel" id="panelfour" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+      <h2>HEALTH LITERACY</h2>
+      <p>Every day, you make choices about your health: what to eat, when to see a doctor, whether or not to smoke. To stay healthy, you must know how to read the labels on food and medicine, locate the nearest health center,
+      report symptoms to health professionals, understand insurance paperwork, and pay medical bills. These can be complicated tasks and the skills to achieve them are not explicitly taught. </p>
+      </br>
+      <p>Individuals have different levels of health literacy, which refers to how well a person can get the health information and services that they need, and how well they understand them. These differences in health literacy often involve differences in:
+          <ul style="width:100%">
+            <li style="float:none">Access to information that individuals can understand;</li>
+            <li style="float:none">Skills, such as finding that information, communicating with health care providers, living a healthy lifestyle, and managing a disease;</li>
+            <li style="float:none">Knowledge of medical words, and of how their healthcare system works;</li>
+            <li style="float:none">Abilities, such as physical or mental limitations; and</li>
+            <li style="float:none">Personal factors, such as age, education, language abilities, and culture.</li>
+          </ul>
+      </p>
+      </br>
+       <p>Low health literacy can result in medication errors; low rates of treatment compliance due to poor communication between providers and patients; reduced use of preventive services and unnecessary emergency room visits; ineffective management of chronic conditions, due to inadequate self-care skills; longer hospital stays and increased hospital re-admissions; poor responsiveness to public health emergencies; and higher mortality.
+      </p>
+      </br>
+      <p>For those with low health literacy, their ability to make health decisions is affected, which can in turn harm their health.</p>
+      </br>
+      <p><b>To learn more about health literacy and to improve your health literacy, visit:</b>
+        <ul style="width:100%">
+          <li style="float:none">National Network of Libraries of Medicine: <a style="float:none" href="http://nnlm.gov/outreach/consumer/hlthlit.html" target="_blank">Health Literacy</a></li>
+          <li style="float:none"> National Institues of Health: <a style="float:none" href="http://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/clear-communication/health-literacy" target="_blank">Clear Communication - Health Literacy</a></li>
+          <li style="float:none">U.S. Department of Health and Human Services: <a style="float:none" href="http://health.gov/communication/literacy/quickguide/factsbasic.htm" target="_blank">Health Literacy Basics</a>, <a style="float:none" href="http://health.gov/communication/literacy/quickguide/factsliteracy.htm" target="_blank">Health Literacy and Health Outcomes</a>, <a style="float:none" href="http://womenshealth.gov/aging/drugs-alternative-medicine/how-to-read-drug-labels.html" target="_blank">How To Read Drug Labels</a></li>
+          <li style="float:none">Centers for Disease Control and Prevention: <a style="float:none" href="http://www.cdc.gov/healthliteracy/learn/" target="_blank">Learn About Health Literacy</a></li>
+          <li style="float:none"> Center for Health Care Strategies: <a style="float:none" href="http://www.chcs.org/media/CHCS_Health_Literacy_Fact_Sheets_2013.pdf" target="_blank">What is Health Literacy?</a></li>
+          <li style="float:none">U.S. Food and Drug Administration: <a style="float:none" href="http://www.fda.gov/forconsumers/consumerupdates/ucm424523.htm" target="_blank">Want To Be More Health Savvy?</a></li>
+        </ul>
+      </p>      
+      <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="panel" id="panelfive" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+      <h2>GLOSSARIES</h2>
+      <p>Patients' understanding of their medical problems is essential to allow them to make competent decisions, comply with treatment and enable recovery. It can be useful to have a general sense of what some common medical terms mean in order to understand your condition, medication or treatment plans. Always ask your doctor for more clarification if you are unsure what she is describing to you or what certain terms mean. </p>
+      </br>
+        <ul style="width:100%">
+          <li style="float:none">Harvard Health Medical Dictionary of Terms: <a style="float:none" target="_blank" href="https://drive.google.com/file/d/0B8X3apv-mENvRUlPRkwxLXkyTTg/view?usp=sharing">A-C</a>, <a style="float:none" target="_blank" href="https://drive.google.com/file/d/0B8X3apv-mENvQ1FvaGplNEF4MUU/view?usp=sharing">D-I</a>, <a style="float:none" target="_blank" href="https://drive.google.com/file/d/0B8X3apv-mENvVjBSc1lIVF8xZmc/view?usp=sharing">J-P</a>, <a style="float:none" target="_blank" href="https://drive.google.com/file/d/0B8X3apv-mENvaTh1OFFscTdDVW8/view?usp=sharing">Q-Z</a></li>
+          <li style="float:none">American Society of Radiologic Technologists: <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfMTJEYU8zVjBERmM/view?usp=sharing" target="_blank">Glossary to the Medical Imaging and Radiation Therapy Practice Standards</a></li>
+          <li style="float:none"> Society of Nuclear Medicine and Molecular Imaging: <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfUkMwZDVCaWY3ZkU/view?usp=sharing" target="_blank">Glossary of Molecular Imaging Terms</a></li>
+          <li style="float:none">Medical Imaging Technologies: <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfMGZFbzBwT2hyR1E/view?usp=sharing" target="_blank">Glossary</a></li>
+          <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfQXNyN0hBa01Ydm8/view?usp=sharing" target="_blank">Allergy and Immunology Glossary</a>
+          <li style="float:none">National Library of Medicine: <a style="float:none" href="https://www.nlm.nih.gov/medlineplus/medicalwords/" target="_blank">Understanding Medical Words Tutorial</a>, <a style="float:none" href="https://www.nlm.nih.gov/medlineplus/appendixb.html" target="_blank">Common Abbreviations</a></li>
+        </ul>
+      </p>      
+      <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div> 
+  <div data-role="header">
+    <h1>HEALTH TOOLS</h1>
+    <a href="#pageone" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse">Go Back</a>
+  </div>
+   <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="familyhistory.jpeg">
+          <h3>FAMILY HISTORY</h3>
+          <p>Family health history is information about diseases that run in your family, as well as the eating habits, activities, and environments that your family shares. </p>
+          <a href="#panelone" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+          
+        <li>
+          <img src="advancedcareplanning.jpg" >
+          <h3>ADVANCE CARE PLANNING</h3>
+          <p>If you are in an accident or have an illness that leaves you unable to talk about your wishes, who will speak for you? </p>
+          <a href="#paneltwo" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+
+        <li>
+          <img src="genetics001.jpg" >
+          <h3>ENVIRONMENT AND GENETICS</h3>
+          <p>Nearly all diseases result from a complex interaction between an individual's genetic make-up and the environmental agents that he or she is exposed to.</p>
+          <a href="#environmentgeneticspage" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+
+        <li>
+          <img src="literacy_overview_woman.jpg" >
+          <h3>HEALTH LITERACY</h3>
+          <p>Health literacy is the ability to read, understand, and act on health care information. More than 90 million adults in the United States have low health literacy.</p>
+          <a href="#panelfour" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+        <li>
+          <img src="glossary.jpg" >
+          <h3>GLOSSARIES</h3>
+          <p>Cardiomyopathy, false positive, sprained vs. fractured, arthroscopy - what do all those medical words mean? </p>
+          <a href="#panelfive" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+        <h1>Community Conversations: Sister to Sister</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="pagethree">
+    <div data-role="header">
+      <h1>NAVIGATING THE HEALTH CARE SYSTEM</h1>
+      <a href="#pageone" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+      <div data-role="panel" id="healthcareteampanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>BUILDING A HEALTH CARE TEAM</h2>
+        <p> One of the most important challenges of healthcare consumers is the selection of their team of caregivers. Some consumers coordinate, manage, and recruit each member of their family's team of caregivers, or it can be a shared role between a consumer and their provider. These caregivers can include a variety of people. Most teams include medical providers like primary care doctors and specialists as well as community-based support to address the social, emotional, and physical aspects of health, among others. 
+
+        These can include speech therapists, physical therapists, occupational therapists, teachers, aides, home caregivers, nurses, and/or tutors. Other members might be counselors, psychologists, neuropsychologists, psychiatrists, baby-sitters, grandparents, friends, religious community, and neighbors. </p>
+        </br>
+        <p> While families look for caregivers that are highly skilled and accessible, they also search for someone with whom they feel the greatest level of comfortable communication. They look for caregivers they can ask any question and to whom they can communicate their needs without embarrassment. Families seek providers that are comfortable learning as well as teaching. They look for providers with whom they can form partnerships. </p>
+        </br>
+        <p> With so many different knowledge bases and sometimes priorities, members of the team may raise conflicting concerns and recommendations. The family then learns how to weigh all the information, finally choosing what works best for them. One strategy that has worked for many families includes teaming up with other local families. Aside from the benefits of sharing support, these partnerships can help identify areas of concern, encouraging additional resources and expertise within the community.
+        </p>
+        </br>
+        <p> Certainly, no one knows a patient better than his/her family. While doctors and other caregivers may have condition-specific information, only a patient and their family members can determine if and how that information relates to their them. Over time, many families become experts on a diagnosis in the family. Often families take this opportunity to teach their providers what they know. In this way, they become advocates not only for the patient, but also for other patients.
+        </p>
+        <a href="#pagethree" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="healthcare-teamwork.jpg">
+          <h3>BUILDING A HEALTHCARE TEAM</h3>
+          <p> Today, a good patient-provider relationship is a partnership. You, your doctor, and your caregivers can work as a team.</p>
+          <a href="#healthcareteampanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+          
+        <li>
+          <img src="planning.png" >
+          <h3>PLANNING A VISIT</h3>
+          <p>Creating a basic plan before you go to the doctor can help you make the most of your visit. </p>
+          <a href="#pagefive" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+
+        <li>
+          <img src="testtube.jpg" >
+          <h3>DIAGNOSIS AND TESTING OPTIONS</h3>
+          <p>When a diagnosis is accurate and made in a timely manner, a patient has the best opportunity for a positive health outcome because clinical decision making will be tailored to a correct understanding of the patient's health problem. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+
+        <li>
+          <img src="pills.jpeg" >
+          <h3>TREATMENT OPTIONS</h3>
+          <p>Different treatments have different benefits and risks, and understanding treatment options for common health conditions can help prepare you for your next medical appointment.</p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="pagefive">
+    <div data-role="header">
+      <h1>PLANNING A VISIT</h1>
+      <a href="#pagethree" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+      <div data-role="panel" id="beforeapptpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>BEFORE THE APPOINTMENT</h2>
+        <p> Briefly write down significant medical history. Include episodes of major illness, hospital admissions, ongoing medical or behavioral problems, and medications. This summary can help guide the health care team when reviewing the patient's chart.</p>
+        </br>
+        <p> Make a written list of questions and concerns. Leave space to write down the answers. Meetings with the providers should be an open exchange of ideas and information. Do not hesitate to actively participate. Here are some questions that may be good to ask during an appointment:
+          <ul style="width:100%; float:none">
+              <li style="float:none"> What is the diagnosis? </li>
+              <li style="float:none"> How accurate is the diagnosis? </li>
+              <li style="float:none"> Are there any tests that can confirm that a person has this condition? </li>
+              <li style="float:none"> What are the characteristics of this condition? </li>
+              <li style="float:none"> Is there a cure or treatment for the condition? </li>
+              <li style="float:none"> Is financial assistance available? </li>
+              <li style="float:none"> What other specialists do I need to see? </li>
+              <li style="float:none"> How likely are my family members to have this condition? </li>
+              <li style="float:none"> How is this condition passed on from one generation to the next? </li>
+              <li style="float:none"> Where can I get additional information? </li>
+          </ul>
+        </p>
+        </br>
+          <p> If the diagnosis is known, bring a brief explanation of the diagnosis. If available, bring any brochures or relevant articles. These can serve as reminders of the important health concerns.
+          </p>
+          </br>
+          <p> Bring a list of all the health care professionals involved in the patient's care. Include their names, specialties, and contact information. This can help bring together the team and encourage an integrated approach.
+          </p>
+        <a href="#pagefive" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="duringapptpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>During the Appointment</h2>
+          <p> <b> Tell the health provider the reason for scheduling an appointment and what are your family's goals for the visit. </b> This will help the health provider provide the most appropriate care. </p>
+          </br>
+          <p> <b> Discuss all aspects of the patient's care. </b> Often families are hesitant to mention something because they fear that their concerns are unimportant. Seemingly unrelated symptoms or even subtle characteristics may turn out to be key in determining a diagnosis or the best care program. Families should always tell everything and let the health provider determine what is relevant. </p>
+          </br>
+          <p> <b> Be as clear and descriptive as possible. </b> Do not hesitate to rephrase questions or concerns if you are unsure that your concerns are being understood. </p>
+          </br>
+          <p> <b> Do not be afraid to ask questions. </b> All questions are important. Sometimes there is a lot going on at the health institution and it may be difficult to remember all the questions.  Bringing a list of questions with room for your notes may be helpful. </p>
+          </br>
+          <p> <b> Before leaving the office, make sure that all questions have been answered and you are comfortable with the information presented. </b> If the provider suggested a diagnosis, prescribed medication, or recommended a treatment, do not hesitate to ask questions or raise concerns. Ask for written materials and ask for definitions or how to spell a word. </p>
+        <a href="#pagefive" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="afterapptpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>AFTER THE APPOINTMENT</h2>
+        <p> <b> If there are any remaining or new questions, call your provider. </b> If the provider is not available, another health care professional on the team can help. Counselors, nurses, or social workers may be available to take the patient's calls.</p>
+        </br>
+        <p> <b> Get informed. </b> Subscribe to a newsletter or attend meetings about your family member's condition. Next time you see the health provider, you may be able to share the most recent information on the family member's condition. </p>
+        </br>
+        <p> Whenever possible, ask for and keep copies of exams, tests, and letters from the provider. </p>
+        </br>
+        <p> Other considerations...
+          <ul style="width:100%; float:none">
+            <li style="float:none"> <b> Be informed of health insurance issues.</b> It is helpful to know what are the regulations of your insurance policy, the value of your annual deductible, and whether a procedure requires pre-approval.</li>
+            <li style="float:none"><b> Protect your privacy. </b> It is important to use judgment to decide who needs to know medical information about you.  Do not give disclosure authorization if there is a doubt.</li>
+          </ul>
+        </p>
+        <a href="#pagefive" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="notepad.jpg">
+          <h3>BEFORE THE APPOINTMENT</h3>
+          <p>Talking about your health means sharing information about how you feel. Sometimes it can be hard to remember everything that is bothering you during your health provider visit.</p>
+          <a href="#beforeapptpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+          
+        <li>
+          <img src="black-doctors.jpg" >
+          <h3>DURING THE APPOINTMENT</h3>
+          <p>Make sure that all your questions have been answered and that you are comfortable with the information presented. </p>
+          <a href="#duringapptpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+
+        <li>
+          <img src="pillbottle.jpg" >
+          <h3>AFTER THE APPOINTMENT</h3>
+          <p>After your appointment, you should continue to understand your health and follow any given treatment plans. </p>
+          <a href="#afterapptpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div>
+
+	<div data-role="page" id="healthconditionspage">
+    <div data-role="header">
+      <h1>HEALTH CONDITIONS</h1>
+      <a href="#pageone" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+    </div>
+    <div data-role="panel" id="alzheimerspanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>ALZHEIMER's DISEASE</h2>
+        <p> It is true that some of us get more forgetful as we age. It may take longer to learn new things, remember familiar names and words, or find our glasses. These are usually signs of mild forgetfulness, not serious memory problems. Serious memory problems affect your ability to carry out everyday life activities such as driving a car, shopping, or handling money.
+        </p>
+        </br>
+        <p>
+        Dementia describes a group of symptoms that are caused by changes in brain function. Dementia symptoms may include asking the same questions repeatedly; becoming lost in familiar places; being unable to follow directions; getting disoriented about time, people, and places; and neglecting personal safety, hygiene, and nutrition. People with dementia lose their abilities at different rates.
+        </p>
+        </br>
+        <p>
+        The most common form of dementia among older people is Alzheimer's disease, which initially involves the parts of the brain that control thought, memory, and language. Alzheimer's disease is a progressive, neurodegenerative disease characterized in the brain by abnormal clumps (amyloid plaques) and tangled bundles of fibers (neurofibrillary tangles) composed of misplaced proteins. Three genes have been discovered that cause early onset (or family) Alzheimer's.
+        </p>
+        </br>
+        <p>
+        Symptoms of Alzheimer's disease include memory loss, language deterioration, impaired ability to mentally manipulate visual information, poor judgment, confusion, restlessness, and mood swings. Eventually Alzheimer's destroys cognition, personality, and the ability to function. The early symptoms of Alzheimer's disease, which include forgetfulness and loss of concentration, are often missed because they resemble natural signs of aging.
+        </p>
+        </br>
+        <p>
+        Scientists do not yet fully understand what causes Alzheimer's disease. Age and family history are important known risk factors. There is no cure for Alzheimer's disease and no way to slow the progression of the disease. For some people in the early or middle stages of Alzheimer's disease, medication such as tacrine (Cognex) may alleviate some cognitive symptoms. Donepezil (Aricept), rivastigmine (Exelon), and galantamine (Reminyl) may keep some symptoms from becoming worse for a limited time. A fifth drug, memantine (Namenda), was recently approved for use in the United States.
+        </p>
+        </br>
+        <p>
+        Research has shown that first-degree relatives of African Americans with Alzheimer's disease have a higher cumulative risk of dementia than do those of whites with Alzheimer's disease. However, the additional risk of dementia conferred by being a first-degree relative, by being female, or by the probability of having an APOE genotype, the most common genetic risk factor associated with late-onset Alzheimer's appeared similar in African American and white families.
+        </p>
+        </br>
+        <p> Those with Alzheimer's disease often need some type of chronic care. Chronic care differs from the acute care people receive in hospitals and doctor's offices. Chronic care is characterized by daily personal-care assistance, supervision, help with taking medications, meal preparation, companionship, shopping, cleaning and doing the laundry, for example. Chronic care in America varies from community to community. It includes community-based and institutional care providers as well as state, federal, and private funding sources. Many Alzheimer's patients are served by this system — in their homes, in special “dementia-care” programs, in adult day care facilities and in nursing homes. The health care professionals working in this system are typically social workers, nurses, therapists and case managers.
+        </p>
+        </br>
+        <p>
+        Once an individual with Alzheimer's disease has lost competence, it is too late to designate the person he or she wants to make his or her health care, financial and estate-planning decisions. This is why choosing a decision-maker in advance of incapacity can be critical to maintaining the quality of life for a loved one with Alzheimer's disease, as well as for his or her family. <a href="#pagetwo">Learn more about advance care planning</a>.
+        <p>
+        </br>
+        <p><b>To learn more about Alzheimer's disease, visit:</b>
+		<ul style="width:100%; float:none">
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfRm04bEU4YVU3bkU/view?usp=sharing" target="_blank">Alzheimer's information and treatment introduction</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfQmZfdGhHSEltS0E/view?usp=sharing" target="_blank">Facts about Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfTEVjUnNia2Izd0k/view?usp=sharing" target="_blank">Causes of Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfYnd6NFpWRm5tWkE/view?usp=sharing" target="_blank">How Alzheimer's is diagnosed</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfX1QwU1pQcmUzd1U/view?usp=sharing" target="_blank">Treatment of Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfaGtCMDdqQ0xHQk0/view?usp=sharing">Understanding memory loss</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfREMwVTJLenEyRG8/view?usp=sharing" target="_blank">What is dementia?</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfOUdfU0tJN1ZBb2c/view?usp=sharing" target="_blank">Risk of dementia among white and African American relatives of patients with Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfTnk3QTFiQkpQQ3M/view?usp=sharing" target="_blank">The age-dependent relation of blood pressure to cognitive function and dementia</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfOGZOU1NtTU5PSWc/view?usp=sharing" target="_blank">Leisure-time physical activity at midlife and the risk of dementia and Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfZ1RPM2FSb2JiSTA/view?usp=sharing" target="_blank">Prevention of dementia with antihypertensive treatment</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfTmJyemx3azVGdTQ/view?usp=sharing" target="_blank">Biomarkers for cognitive impairment and dementia in elderly people</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfUHpKM0NaZEg4Wjg/view?usp=sharing" target="_blank">Promising strategies for the prevention of dementia</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfVzJrdmZCVG9ZREE/view?usp=sharing" target="_blank">Prevalence, incidence, and factors associated with pre-stroke and post-stroke dementia: a systematic review and meta-analysis</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfUXpLVWFzY3gyYXc/view?usp=sharing" target="_blank">Vascular contributions to cognitive impairment and dementia</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfS0huSXUwV3htZ1k/view?usp=sharing" target="_blank">Disparities in stroke: not just black and white</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfd3o3R2JoV0FrQ2s/view?usp=sharing" target="_blank">The road map to integrated dementia prevention and care</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfWkJYQlJGRFpVbWs/view?usp=sharing" target="_blank">Genetics of dementia</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNXJZOE0yUXFjRVU/view?usp=sharing" target="_blank">Integrative genomics identifies APOE4 effectors in Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNGJQSEpjTnVwaTQ/view?usp=sharing" target="_blank">The gene variant APOE4 is the most common genetic risk factor associated with late-onset Alzheimer's disease.</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfTERNS1NuUnhLRHM/view?usp=sharing" target="_blank">A caregiver's guide to Alzheimer's</a></li>
+	         <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfQUNhM3p6bm1mT1k/view?usp=sharing" target="_blank">Alzheimer's care and planning for families</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfT2ZKUnhXdnRORTQ/view?usp=sharing">Areas of research into Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNnJaaVVYeG9KQ2c/view?usp=sharing" target="_blank">Family caregivers find support in new Web-based tool called CareSolver</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfMmNLdnVGZENpWWM/view?usp=sharing" target="_blank">How to reduce wandering in people with Alzheimer's</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNzhwdk94ZkRFRkk/view?usp=sharing" target="_blank">Lumosity: improve your brain performance and live a better life</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfQ215ZmZ6ZmF3cGM/view?usp=sharing" target="_blank">Top Alzheimer's disease and dementia support groups</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfZW1ObHZ4dm0yeU0/view?usp=sharing" target="_blank">Top Alzheimer's disease and dementia resources</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfTjcxSkY4eEpmOE0/view?usp=sharing" target="_blank">Adult day services for dementia patents help relieve caregivers' stress</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfbnl2TzY2dzNuZFU/view?usp=sharing" target="_blank">Further information on Alzheimer's disease</a></li>
+	        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfbnl2TzY2dzNuZFU/view?usp=sharing" target="_blank">Outlook and research into Alzheimer's</a></li>
+	        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfLW1zaVZoR2lsaEU/view?usp=sharing">Alzheimer's disease symptoms</a></li>
+	    </ul>
+	    </p>
+        <a href="#healthconditionspage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="panel" id="sicklecellpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+    <p> To learn more about sickle cell disease, please click on the following links:
+      <ul style="width:100%;float:none">
+        <li style="float:none"> <a style="float:none"href="https://drive.google.com/file/d/0B-5BlRqvViLfdGYya3Vvc1B0eE13VFpBM3pTZ0JnRkg1NXln/view?usp=sharing" target="_blank">SCDAA's about sickle cell disease</a></li>
+        <li style="float:none"> <a style="float:none"href="https://drive.google.com/file/d/0B-5BlRqvViLfWlRMS1dIcFcxOHdrVTJ2YlduWk5oUXdTOHo4/view?usp=sharing">Management of acute chest syndrome in sickle cell disease</a></li>
+        <li style="float:none"> <a style="float:none"href="https://drive.google.com/file/d/0B-5BlRqvViLfQjZEWDg0cGJETVE2SjlJTWw2d3pnR183aWFN/view?usp=sharing" target="_blank">Health supervision for children with sickle cell disease</a></li>
+        <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfNi1hWWpvSi04bzhidHFFenlSTzRDSEZrN1FZ/view?usp=sharing" target="_blank">Comprehensive care for children and adolescents with sickle cell disease</a></li>
+        <li> <a href="hhttps://drive.google.com/file/d/0B-5BlRqvViLfSmhIY3ZELTN2aTV3d09PSWpyVlFPMVlodEVj/view?usp=sharing" target="_blank">Management of acute pain in pediatric patients with sickle cell disease (vaso-occlusive episodes)</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfSjY1RkRCV0thREVRTG5YbkQ5MmRac3I0Mlh3/view?usp=sharing" target="_blank">Prevention and treatment of stroke for pediatric patients with sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfVVZJNnI1SW01QmlpM3VWZkVxOEdYWGVpTlFr/view?usp=sharing" target="_blank">Evaluation and management of fever in pediatric patients with sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfOE5UNjQwREJNdm03dG5yMzJneWFRNW4tanU4/view?usp=sharing" target="_blank">Fast facts and concepts #270: pain in sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfYnNUcW5qZUg4X2NiSmlaTEN5VWJXb0hCeWVN/view?usp=sharing" target="_blank">Sickle Cell Information Center's patient and family needs assessment</a></li>
+         <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfS3NueVlHTXlNbzFYQi1YSkVzWTU2a0h1czZj/view?usp=sharing" target="_blank">Guidelines for standard of care of acute painful episodes in patients with sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfaGNYNnBGd3YtUVExRUxSVTh2Q0ozaW5WQ2VZ/view?usp=sharing" target="_blank">Use of hydroxyurea in pediatric patients with sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfLWFhYkVJS05hSzBXVzRQbFdhSC04V3NsdjVB/view?usp=sharing" target="_blank">Routine health care maintenance of pediatric patients with sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfMVNuNGMwcGlEUlhzMDE1VWVRVjJDeTk3S3Nj/view?usp=sharing" target="_blank">Online books and resources for patients and families</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfaDA3SHpBTk5HQ0FFbGc2MktDU2dPWmF1bDJN/view?usp=sharing" target="_blank">Management of priapism in sickle cell disease</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfTDBiWFpPYlFDcDhwMUdaVDU0M2dvOUVPTThj/view?usp=sharing" target="_blank">Sickle cell disease resource kit</a></li>
+         <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfdTIwZWhVZGpQOUw0TUNfSFRKMHp3UGVOUVB3/view?usp=sharing" target="_blank">Sickle cell trait and athletics</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfWUdDbkNLeHMyRXVkNW9Pbk8zNklGQVdzb1JV/view?usp=sharing">Sickle cell disease transition guidebook</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfenpJWnR6ZEJjeGJRTDBmVFczZGgwNW40ZFdz/view?usp=sharing" target="_blank">STRIVE afterschool program</a></li>
+        <li> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfWXdnZ2l6ZFF6M0JTcnVFX2tyMUdMT0pOampn/view?usp=sharing" target="_blank">Blood transfusion for pediatric patients with sickle cell disease</a></li>
+      </ul>
+    </p>
+    <a href="#healthconditionspage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="panel" id="allergiespanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px">
+    <p> Allergies are inappropriate or exaggerated reactions of the immune system to substances that, in the majority of people, cause no symptoms. Symptoms of the allergic diseases may be caused by exposure of the skin to a chemical, of the respiratory system to particles of dust or pollen (or other substances), or of the stomach and intestines to a particular food. </p>
+    <p> 
+
+
+              </ul>
+              To review the informational material made available during this session, please click on the following links:
+              <ul>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfQXNyN0hBa01Ydm8/view?usp=sharing" target="_blank">Allergy and Immunology Glossary</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfNzR6MmlJdlozY3M/view?usp=sharing" target="_blank">Allergic Rhinitis</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfUm1HYTBBTkw4LVU/view?usp=sharing" target="_blank">Asthma Facts and Figures</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfM3BUb1dmN3pyNTQ/view?usp=sharing" target="_blank">Allergies exist in many different forms:</a> <a href="https://drive.google.com/file/d/0B-5BlRqvViLfdmFxQ0x1dXBkMUE/view?usp=sharing" target="_blank">Allergic Asthma</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfdV9jbEt1T0ctSDQ/view?usp=sharing" target="_blank">Non-allergic Asthma</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfRDJTbklpNnZfOFk/view?usp=sharing" target="_blank">Dust Allergy</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfQ1dodGNub0p6eFE/view?usp=sharing" target="_blank">Food Allergy</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfQ0h1bE5HaUNiVmM/view?usp=sharing" target="_blank">Insect Sting Allergies</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfUUdQVjhXOVZpOHc/view?usp=sharing" target="_blank">Mold Allergy</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfMEVmUThCTGZNdzg/view?usp=sharing" target="_blank">Seasonal Allergies: Symptoms, Diagnosis, and Treatment</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfQ0k2N2ZfbW9LalE/view?usp=sharing" target="_blank">Seasonal Allergies: 4 Routes to Relief</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfbkNiOXp3ZHNSWlE/view?usp=sharing" target="_blank">Common Seasonal Allergy Triggers and Management</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfbnNqRUdHOWRuMVU/view?usp=sharing" target="_blank">Hay Fever: Relieve seasonal allergies with these tried-and-true techniques</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfbWVEcEdBX0Q5NGM/view?usp=sharing" target="_blank">Outdoor Allergens: Tips to Remember</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfOWtoeEFWTEJMOXM/view?usp=sharing" target="_blank">Allergy Treatment</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfY0lpNkliNm80WVk/view?usp=sharing" target="_blank">6 Natural Allergy Remedies</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfRTdhMDBLU3I5UVU/view?usp=sharing" target="_blank">5 Home Remedies for Seasonal Allergies (Beyond Local Honey)</a>, <a href="https://drive.google.com/file/d/0B-5BlRqvViLfVHdvWGlXYkp2V1E/view?usp=sharing" target="_blank">Relieve Allergies the Natural Way</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfem9yRFo3NG8tRXc/view?usp=sharing" target="_blank">Does black race make children more susceptible to food allergy?</a>, Self-report of food allergy among U.S. children has sharply increased in the past 2 decades. The increase has been greatest among non-Hispanic black children, a disparity that needs to be investigated. <a href="https://drive.google.com/file/d/0B-5BlRqvViLfbC13RG9fTUg3Tlk/view?usp=sharing" target="_blank">Temporal trends and racial/ethnic disparity in self-reported pediatric food allergy in the United States</a></li>
+                <li><a href="https://drive.google.com/file/d/0B-5BlRqvViLfSFROOFd5OW1fdDA/view?usp=sharing" target="_blank">Ethnic Disparities in the Burden and Treatment of Asthma</a></li>
+              </ul>
+      </ul>
+    </p>
+    <a href="#healthconditionspage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <h3>ALZHEIMER'S DISEASE AND DEMENTIA</h3>
+          <img src="alzheimers2.jpg">
+          <p>Alzheimer's disease is a chronic, progressive illness and is the most common cause of dementia in older individuals. It is characterized by progressive intellectual deterioration.</p>
+         <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+         <li>
+          <h3>ALLERGIES</h3>
+          <img src="blackallergy.jpg">
+          <p>Allergies are inappropriate or exaggerated reactions of the immune system to substances that, in the majority of people, cause no symptoms. </p>
+         <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+         <li>
+          <h3>CANCER</h3>
+          <img src="blackallergy.jpg">
+          <p>Cancer is a group of diseases characterized by uncontrolled growth and spread of abnormal cells.</p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+        <li>
+          <h3>INSOMNIA AND SLEEP DISTURBANCE</h3>
+          <img src="insomnia.jpg">
+          <p> Insomnia is a common sleep disorder defined by night time and daytime symptoms. Night time symptoms include persistent difficulties falling and/or staying asleep and/or non­restorative sleep. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+        <li>
+          <h3>ORAL DISEASES</h3>
+          <p>Oral health is often taken for granted, but it is an essential part of our everyday lives. Good oral health enhances our ability to speak, smile, smell, taste, touch, chew, swallow, and convey our feelings and emotions through facial expressions. However, oral diseases, which range from cavities to oral cancer, cause pain and disability for millions of Americans each year. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+
+        <li>
+          <h3>SICKLE CELL DISEASE</h3>
+          <p>Sickle cell disease is an inherited blood disorder that affects red blood cells. In the United States, most people with sickle cell disease (SCD) are of African ancestry or identify themselves as black. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+         
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="environmentgeneticspage">
+    <div data-role="header">
+      <h1>ENVIRONMENT AND GENETICS</h1>
+      <a href="#pagetwo" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+      <div data-role="panel" id="toxinpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>ENVIRONMENTAL TOXINS</h2>
+        <p> Exposure to toxic substances can harm the reproductive systems of women and men and make it harder to get pregnant. Developing fetuses, infants, children, pre-teens and teenagers are especially vulnerable. Being exposed to even small amounts of toxic substances during important times of development can lead to disease early in life, later in life, or even across generations.</p>
+        </br>
+        <p> You can prevent exposure at home, prevent exposure at work, prevent exposure in your community, become a smart consumer, and make the government work for you by following these steps:
+          <ul style="width:100%; float:none">
+            <li style="float:none"> Don't smoke. </li>
+            <li style="float:none"> Use non-toxic products, both in terms of personal care products and those that you use to clean your home. </li>
+            <li style="float:none"> Drive less. Carpool, take public transportation, ride your bike, or walk. </li>
+            <li style="float:none"> Never burn trash, especially furniture, tires, and plastics. </li>
+            <li style="float:none"> Never throw toxic substances down drains or toilets or in the garbage. Examples of toxic substances include car oil, gasoline, pesticides, solvents, and medicines.</li>
+            <li style="float:none"> Don't spray bugs. Pesticides are toxic chemicals for killing insects, rodents, weeds, bacteria, and mold. Keep insects and rodents out of your home by cleaning up crumbs and spills, storing food in tightly closed containers, sealing cracks around doors, window sills, and baseboards, and reparing drips and holes.</li>
+            <li style="float:none"> Get out your mop. Toxic substances like lead, pesticides, and flame retardants are presant in dust. Sweeping or dusting with a dry cloth can spread the dust in the the air instead or removing it.</li>
+            <li style="float:none"> Take off your shoes. Shoes can carry toxic chemicals into your home.</li>
+            <li style="float:none"> Don't dry-clean your clothes. Most dry-cleaning systems use a chemical called perchloroethylene (PERC). Dry-cleaned clothes release PERC, polluting the air in your home, so use water instead.</li>
+            <li style="float:none"> Pick your plastics carefully. Some plastics release toxic chemicals like vinyl chloride, phthalates, and bisphenol A (BPA).</li>
+            <li style="float:none">Avoid pesticides and other toxic substances in food and water.</li>
+            <li style="float:none">Avoid lead exposure and test your home for radon.</li>
+          </ul>
+        <p>
+        <p><b>To learn more about how to protect your family and community from exposure to environmental toxins, visit: </b>
+        <ul style="width:100%; float:none">
+          <li style="float:none">University of California, San Francisco: <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfejl1Qzd1WVFNNExsRVpTSUppX3R2QzhpdlFN/view?usp=sharing" target="_blank">Toxic Matters - Protecting Our Families from Toxic Substances</a></li>
+        </ul>
+      </p>      
+        <a href="#environmentgeneticspage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="environment.jpg">
+          <h3>ENVIRONMENTAL TOXINS</h3>
+          <p>Toxic substances are chemicals and metals that can harm your health. Everyone is exposed to toxic substances every day.</p>
+          <a href="#toxinpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+        <li>
+          <img src="pregnant-black-woman.jpg" >
+          <h3>FETAL EXPOSURES</h3>
+          <p>Various toxins and substances, including tobacco smoke, alcohol, mercury, lead, air pollution, and pesticides, pose a significant hazard to fetuses during development. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+
+        <li>
+          <img src="DirectExposure.jpg" >
+          <h3>EPIGENETICS</h3>
+          <p>The behavior of a person's genes doesn't just depend on the genes' DNA sequence - it's also affected by so-called epigenetic factors. Changes in these factors can play a critical role in disease. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+
+        <li>
+          <img src="clinintro.jpg" >
+          <h3>GENETICS</h3>
+          <p>Genes are the instructions inside each of your cells. They control how you look and how your body works. Since everyone has slightly different genes, everyone has a different set of instructions.</p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+        <li>
+          <img src="socdeterminants.jpeg" >
+          <h3>SOCIAL DETERMINANTS OF HEALTH</h3>
+          <p>Conditions in the places where people live, learn, work, and play affect a wide range of health risks and outcomes. These conditions are known as social determinants of health. </p>
+          <a data-role="button" data-inline="true" data-mini="true" data-icon="alert">Under Construction</a>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div>
+
+  <div data-role="page" id="allergiespage">
+    <div data-role="header">
+      <h1>ALLERGIES</h1>
+      <a href="#healthconditionspage" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+      <div data-role="panel" id="allergiesoverviewpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>ALLERGIES OVERVIEW</h2>
+        <p> You can prevent exposure at home, prevent exposure at work, prevent exposure in your community, become a smart consumer, and make the government work for you by following these steps:
+      </p>      
+        <a href="#allergiespage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="asthmapanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px">
+        <h2>ASTHMA</h2>
+        <p> Asthma is characterized by inflammation of the air passages resulting in the temporary narrowing of the airways that transport air from the nose and mouth to the lungs. Asthma symptoms can be caused by allergens or irritants that are inhaled into the lungs, resulting in inflamed, clogged and constricted airways. Symptoms include difficulty breathing, wheezing, and coughing tightness in the chest. In severe cases, asthma can be deadly. There is no cure for asthma, but asthma can be managed with proper prevention and treatment.
+        </p>
+        <br>
+        <p> Asthma has a genetic component. If only one parent has asthma, chances are 1 in 3 that each child will have asthma. If both parents have asthma, it is much more likely (7 in 10) that their children will have asthma.
+        </p>
+        </br>
+        <p> Allergic (extrinsic) asthma is characterized by symptoms that are triggered by an allergic reaction. Allergic asthma is the most common form of asthma, affecting over 50% of the 20 million asthma sufferers. It is triggered by inhaled allergens, such as dust mite allergen, pet dander, pollen, and mold, resulting in asthma symptoms. Non­-allergic (intrinsic) asthma is triggered by factors not related to allergies. Like allergic asthma, non­allergic asthma is characterized by airway obstruction and inflammation that is at least partially reversible with medication, however symptoms in this type of asthma are NOT associated with an allergic reaction. Many of the symptoms of allergic and non­allergic asthma are the same (coughing, wheezing, shortness of breath or rapid breathing, and chest tightness), but non­allergic asthma is triggered by other factors such as anxiety, stress, exercise, cold air, dry air, hyperventilation, smoke, viruses or other irritants. In non­allergic asthma, the immune system is not involved in the reaction.
+        </p>
+        </br>
+        <p> In the United States the burden of asthma falls disproportionately on the black and Hispanic — largely Puerto Rican — populations, and especially on minority children. These groups have disproportionately high rates of poor asthma outcomes, including hospitalizations and deaths. As much as 40 percent of the risk of asthma in minority children is attributable to exposure to residential allergens that could be reduced, if not eliminated. Access to care is hampered by socioeconomic disparities, shortages of primary care physicians in minority communities, and language and literacy barriers. A pattern of health care behavior characterized by the underuse of long-term control medications and a reliance on episodic and emergency care is common in black and Hispanic Americans with asthma. Underuse of asthma medicines, especially of long-term control medications like inhaled corticosteroids, is more common in minority than in white children. Underuse of asthma medications can reflect breakdown via: (1) under-prescribing, (2) not filling prescriptions, and (3) poor compliance with filled prescriptions. Increasing the use of long-term control medications is key to reducing disparities in the burden of asthma.
+        </p>
+        </br>
+        <p><b>Several tools have been developed and are available online to help families learn and live with asthma:</b>
+        <ul style="float:none; width:100%">
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfUm1HYTBBTkw4LVU/view?usp=sharing" target="_blank">Asthma Facts and Figures</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfdmFxQ0x1dXBkMUE/view?usp=sharing" target="_blank">Allergic Asthma</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfdV9jbEt1T0ctSDQ/view?usp=sharing" target="_blank">Non-allergic Asthma</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfSFROOFd5OW1fdDA/view?usp=sharing" target="_blank">Ethnic Disparities in the Burden and Treatment of Asthma</a></li>
+        </ul>
+        </p>
+        <a href="#allergiespage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="asthmapanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px">
+      <h2> ALLERGY HOME REMEDIES</h2>
+      <p> Sneezing, wheezing, runny nose, and itchy, watery, red eyes -- these are just some of the symptoms that more than 35 million Americans face each year as the pollen from trees, grass, flowers, and plants makes its way into the air. For many, relief is just a drugstore counter away -- with a wide array of traditional medications available to help. However, for an increasing number of allergy sufferers the road to relief is best paved by Mother Nature, with a variety of all-natural treatments that studies show can help -- often without many of the troubling side effects ascribed to traditional care.</p>
+      </br>
+      <p> Among those generating the loudest buzz right now is the European herb butterbur (Petasites hybridus). In one study, published recently in the British Medical Journal, a group of Swiss researchers showed how just one tablet of butterbur four times daily was as effective as a popular antihistamine drug in controlling symptoms of hay fever -- without the traditional symptom of drowsiness that sometimes occurs. In a second study, presented at the 60th annual meeting of the American Academy of Allergy, Asthma, and Immunology Allergies Health Center (AAAAI), a group of British researchers put their stamp of approval on butterbur's effectiveness in quelling symptoms of grass allergy. Other herbal supplements proving helpful include freeze-dried nettles and a tonic made from the herb goldenseal, which is recommended to be added to still one more natural treatment -- a saline (salt water) nasal spray.
+      </p>
+      </br>
+      <p> In addition to herbs, many naturopathic doctors also believe certain nutrients can be helpful in quieting seasonal symptoms. Among the most popular are grape seed extract and a flavonoid compound known as quercetin. Although both occur naturally in many foods -- and are especially abundant in red wine -- when used in supplement form they can be extremely helpful in reducing allergy symptoms, particularly in conjunction with vitamin C.
+      </p>
+      </br>
+      <p> You might want to try cooking up some allergy relief in the form of hot, spicy foods. The reason: Experts say the spicier the dish, the more likely it is to thin mucous secretions, which in turn can clear nasal passages. Among the most frequently recommended spices for this purpose include cayenne pepper, hot ginger, and fenugreek, as well as the traditional onion and garlic.</p>
+      </br>
+      <p> In addition to whatever natural treatments you try on your own, you may also find significant relief visiting a practitioner of the ancient Chinese medical practice known as acupuncture. Based on the idea that stimulating points outside the body can change or initiate reactions inside, in this case treatment is thought to affect the immune system, where allergic reactions begin. </p>
+      </br>
+      <p> Though many nontraditional treatments can be extremely helpful, natural doesn't always mean better -- or safer. It's possible to overdose on even the most seemingly mild preparations, and it's important to remember that almost anything in nature's pharmacy could cause a toxic reaction if you use too much. More important is never to mix alternative treatments with traditional drugs without your doctor's approval. </p>
+      </br>
+      <p>
+      <ul style="width:100px; float:none">
+        <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfVHdvWGlXYkp2V1E/view?usp=sharing" target="_blank">Relieve Allergies the Natural Way</a></li>
+        <li style="width:none"><a style="width:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfY0lpNkliNm80WVk/view?usp=sharing" target="_blank">6 Natural Allergy Remedies</a></li>
+        <li style="width:none"><a style="width:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfRTdhMDBLU3I5UVU/view?usp=sharing" target="_blank">5 Home Remedies for Seasonal Allergies (Beyond Local Honey)</a></li>
+      </ul>
+      </p>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="blackallergy.jpg">
+          <h3>OVERVIEW</h3>
+          <p>Symptoms of the allergic diseases may be caused by exposure of the skin to a chemical, of the respiratory system to particles of dust or pollen (or other substances), or of the stomach and intestines to a particular food.</p>
+          <a href="#allergiesoverviewpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+        <li>
+          <img src="blackwomansneezing.jpg" >
+          <h3>TYPES OF ALLERGIES</h3>
+          <p>Allergies exist in many different forms: food allergy, skin allergy, dust allergy, insect sting allergy, pet allergies, eye allergy, drug allergies, allergic rhinitis, latex allergy, mold allergy, sinus information, and cockroach alergy, among others. </p>
+          <a href="#allergytypespage" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+        <li>
+          <img src="blackasthma.jpg" >
+          <h3>ASTHMA</h3>
+          <p>Asthma is characterized by inflammation of the air passages resulting in the temporary narrowing of the airways that transport air from the nose and mouth to the lungs. </p>
+          <a href="#asthmapanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+          
+        </li>
+
+        <li>
+          <img src="home-remedies.jpg" >
+          <h3>HOME REMEDIES</h3>
+          <p>There are plenty of remedies you can try at home to help relieve the common symptoms of seasonal allergies. Many are designed to prevent a reaction before it occurs.</p>
+          <a href="#allergyhomeremediespanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+        <li>
+          <img src="socdeterminants.jpeg" >
+          <h3>ETHNIC DISPARITIES</h3>
+          <p>Conditions in the places where people live, learn, work, and play affect a wide range of health risks and outcomes. These conditions are known as social determinants of health. </p>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+      </div>
+    </div>
+
+  <div data-role="page" id="alzheimerspage">
+    <div data-role="header">
+      <h1>ALZHEIMER'S DISEASE</h1>
+      <a href="#healthconditionspage" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-l" data-transition="slide" data-direction="reverse" style="float:left">Go Back</a>
+      <div data-role="panel" id="memorylosspanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px"> 
+        <h2>DEMENTIA AND MEMORY LOSS</h2>
+        <p> It is true that some of us get more forgetful as we age. It may take longer to learn new things, remember familiar names and words, or find our glasses. These are usually signs of mild forgetfulness, not serious memory problems. If you’re worried about your forgetfulness, see your doctor. You also can do many things to help keep your memory sharp. Finding a hobby, spending time with friends, eating well, and exercising may help you stay alert and clear­headed. </p>
+        </br>
+        <p> Serious memory problems affect your ability to carry out everyday life activities such as driving a car, shopping, or handling money. Dementia describes a group of symptoms that are caused by changes in brain function. Dementia symptoms may include asking the same questions repeatedly; becoming lost in familiar places; being unable to follow directions; getting disoriented about time, people, and places; and neglecting personal safety, hygiene, and nutrition. People with dementia lose their abilities at different rates. </p>
+        </br>
+        <p> Dementia is caused by many conditions. Some conditions that cause dementia can be reversed, and others cannot. The two most common forms of dementia in older people are Alzheimer's disease and multi­infarct dementia (sometimes called vascular dementia). These types of dementia are irreversible, which means they cannot be cured. (Symptoms associated with dementia can often be treated, however.) </p>
+        <p> Sometimes older people have emotional problems that can be mistaken for dementia. Feeling sad, lonely, worried, or bored may be more common for older people facing retirement or coping with the death of a spouse, relative, or friend. Adapting to these changes leaves some people feeling confused or forgetful. Emotional problems can be eased by supportive friends and family, or by professional help from a doctor or therapist.
+        <p> For more information on dementia and memory loss, visit:
+        <ul style="width:100px; float:none">
+          <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfaGtCMDdqQ0xHQk0/view?usp=sharing">Understanding memory loss</a></li>
+          <li style="float:none"> <a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfREMwVTJLenEyRG8/view?usp=sharing" target="_blank">What is dementia?</a></li>
+        </ul>
+        </p>
+        <a href="#alzheimerspage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="alzheimerspreventionpanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px">
+        <h2>ALZHEIMER'S DISEASE PREVENTION</h2>
+        <p> Asthma is characterized by inflammation of the air passages resulting in the temporary narrowing of the airways that transport air from the nose and mouth to the lungs. Asthma symptoms can be caused by allergens or irritants that are inhaled into the lungs, resulting in inflamed, clogged and constricted airways. Symptoms include difficulty breathing, wheezing, and coughing tightness in the chest. In severe cases, asthma can be deadly. There is no cure for asthma, but asthma can be managed with proper prevention and treatment.
+        </p>
+        <br>
+        <p> Asthma has a genetic component. If only one parent has asthma, chances are 1 in 3 that each child will have asthma. If both parents have asthma, it is much more likely (7 in 10) that their children will have asthma.
+        </p>
+        </br>
+        <p> Allergic (extrinsic) asthma is characterized by symptoms that are triggered by an allergic reaction. Allergic asthma is the most common form of asthma, affecting over 50% of the 20 million asthma sufferers. It is triggered by inhaled allergens, such as dust mite allergen, pet dander, pollen, and mold, resulting in asthma symptoms. Non­-allergic (intrinsic) asthma is triggered by factors not related to allergies. Like allergic asthma, non­allergic asthma is characterized by airway obstruction and inflammation that is at least partially reversible with medication, however symptoms in this type of asthma are NOT associated with an allergic reaction. Many of the symptoms of allergic and non­allergic asthma are the same (coughing, wheezing, shortness of breath or rapid breathing, and chest tightness), but non­allergic asthma is triggered by other factors such as anxiety, stress, exercise, cold air, dry air, hyperventilation, smoke, viruses or other irritants. In non­allergic asthma, the immune system is not involved in the reaction.
+        </p>
+        </br>
+        <p> In the United States the burden of asthma falls disproportionately on the black and Hispanic — largely Puerto Rican — populations, and especially on minority children. These groups have disproportionately high rates of poor asthma outcomes, including hospitalizations and deaths. As much as 40 percent of the risk of asthma in minority children is attributable to exposure to residential allergens that could be reduced, if not eliminated. Access to care is hampered by socioeconomic disparities, shortages of primary care physicians in minority communities, and language and literacy barriers. A pattern of health care behavior characterized by the underuse of long-term control medications and a reliance on episodic and emergency care is common in black and Hispanic Americans with asthma. Underuse of asthma medicines, especially of long-term control medications like inhaled corticosteroids, is more common in minority than in white children. Underuse of asthma medications can reflect breakdown via: (1) under-prescribing, (2) not filling prescriptions, and (3) poor compliance with filled prescriptions. Increasing the use of long-term control medications is key to reducing disparities in the burden of asthma.
+        </p>
+        </br>
+        <p><b>Several tools have been developed and are available online to help families learn and live with asthma:</b>
+        <ul style="float:none; width:100%">
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfUm1HYTBBTkw4LVU/view?usp=sharing" target="_blank">Asthma Facts and Figures</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfdmFxQ0x1dXBkMUE/view?usp=sharing" target="_blank">Allergic Asthma</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfdV9jbEt1T0ctSDQ/view?usp=sharing" target="_blank">Non-allergic Asthma</a></li>
+           <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfSFROOFd5OW1fdDA/view?usp=sharing" target="_blank">Ethnic Disparities in the Burden and Treatment of Asthma</a></li>
+        </ul>
+        </p>
+        <a href="#allergiespage" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Close</a>
+      </div>
+      <div data-role="panel" id="asthmapanel" data-display="overlay" data-position="right" data-dismissible="false" style="width:50%; margin:10px">
+      <h2> ALLERGY HOME REMEDIES</h2>
+      <p> Sneezing, wheezing, runny nose, and itchy, watery, red eyes -- these are just some of the symptoms that more than 35 million Americans face each year as the pollen from trees, grass, flowers, and plants makes its way into the air. For many, relief is just a drugstore counter away -- with a wide array of traditional medications available to help. However, for an increasing number of allergy sufferers the road to relief is best paved by Mother Nature, with a variety of all-natural treatments that studies show can help -- often without many of the troubling side effects ascribed to traditional care.</p>
+      </br>
+      <p> Among those generating the loudest buzz right now is the European herb butterbur (Petasites hybridus). In one study, published recently in the British Medical Journal, a group of Swiss researchers showed how just one tablet of butterbur four times daily was as effective as a popular antihistamine drug in controlling symptoms of hay fever -- without the traditional symptom of drowsiness that sometimes occurs. In a second study, presented at the 60th annual meeting of the American Academy of Allergy, Asthma, and Immunology Allergies Health Center (AAAAI), a group of British researchers put their stamp of approval on butterbur's effectiveness in quelling symptoms of grass allergy. Other herbal supplements proving helpful include freeze-dried nettles and a tonic made from the herb goldenseal, which is recommended to be added to still one more natural treatment -- a saline (salt water) nasal spray.
+      </p>
+      </br>
+      <p> In addition to herbs, many naturopathic doctors also believe certain nutrients can be helpful in quieting seasonal symptoms. Among the most popular are grape seed extract and a flavonoid compound known as quercetin. Although both occur naturally in many foods -- and are especially abundant in red wine -- when used in supplement form they can be extremely helpful in reducing allergy symptoms, particularly in conjunction with vitamin C.
+      </p>
+      </br>
+      <p> You might want to try cooking up some allergy relief in the form of hot, spicy foods. The reason: Experts say the spicier the dish, the more likely it is to thin mucous secretions, which in turn can clear nasal passages. Among the most frequently recommended spices for this purpose include cayenne pepper, hot ginger, and fenugreek, as well as the traditional onion and garlic.</p>
+      </br>
+      <p> In addition to whatever natural treatments you try on your own, you may also find significant relief visiting a practitioner of the ancient Chinese medical practice known as acupuncture. Based on the idea that stimulating points outside the body can change or initiate reactions inside, in this case treatment is thought to affect the immune system, where allergic reactions begin. </p>
+      </br>
+      <p> Though many nontraditional treatments can be extremely helpful, natural doesn't always mean better -- or safer. It's possible to overdose on even the most seemingly mild preparations, and it's important to remember that almost anything in nature's pharmacy could cause a toxic reaction if you use too much. More important is never to mix alternative treatments with traditional drugs without your doctor's approval. </p>
+      </br>
+      <p> For mo
+      <ul style="width:100px; float:none">
+        <li style="float:none"><a style="float:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfVHdvWGlXYkp2V1E/view?usp=sharing" target="_blank">Relieve Allergies the Natural Way</a></li>
+        <li style="width:none"><a style="width:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfY0lpNkliNm80WVk/view?usp=sharing" target="_blank">6 Natural Allergy Remedies</a></li>
+        <li style="width:none"><a style="width:none" href="https://drive.google.com/file/d/0B-5BlRqvViLfRTdhMDBLU3I5UVU/view?usp=sharing" target="_blank">5 Home Remedies for Seasonal Allergies (Beyond Local Honey)</a></li>
+      </ul>
+      </p>
+    </div>
+    <div data-role="main" class="ui-content">
+      <ul>
+        <li>
+          <img src="memoryloss.jpg">
+          <h3>DEMENTIA AND MEMORY LOSS</h3>
+          <p>It’s normal to forget things once in a while. However, forgetting how to make change, use the telephone, or find your way home may be signs of a more serious memory problem.</p>
+          <a href="#memorylossppanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+        </li>
+        <li>
+          <img src="dementiaprevention.jpg" >
+          <h3>STRATEGIES TO PREVENT DEMENTIA</h3>
+          <p>Some of the most promising strategies for the prevention of dementia include vascular risk factor control, cognitive activity, physical activity, social engagement, diet, and recognition of depression. </p>
+          <a href="#alzheimerspreventionpanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+        <li>
+          <img src="blackasthma.jpg" >
+          <h3>ASTHMA</h3>
+          <p>Asthma is characterized by inflammation of the air passages resulting in the temporary narrowing of the airways that transport air from the nose and mouth to the lungs. </p>
+          <a href="#asthmapanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse" >Find Out More</a>
+          
+        </li>
+
+        <li>
+          <img src="home-remedies.jpg" >
+          <h3>HOME REMEDIES</h3>
+          <p>There are plenty of remedies you can try at home to help relieve the common symptoms of seasonal allergies. Many are designed to prevent a reaction before it occurs.</p>
+          <a href="#allergyhomeremediespanel" data-role="button" data-inline="true" data-mini="true" data-icon="arrow-r" data-transition="reverse">Find Out More</a>
+        </li>
+        <li>
+          <img src="socdeterminants.jpeg" >
+          <h3>ETHNIC DISPARITIES</h3>
+          <p>Conditions in the places where people live, learn, work, and play affect a wide range of health risks and outcomes. These conditions are known as social determinants of health. </p>
+        </li>
+      </ul>
+      </div>
+      <div data-role="footer">
+      <h1>Community Conversations: Sister to Sister</h1>
+    </div>
+  </div> 
+
+  </body>
+</html>

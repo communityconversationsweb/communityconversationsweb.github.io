@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+  <style>
+    td {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    tr {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    h3 {
+      color: white;
+    }
+
+    h4 {
+      color: white;
+    }
+
+   .thumbnail {
+    position: relative;
+    width: 225px;
+    height: 175px;
+    overflow: hidden;
+    border-collapse: 0;
+    border-spacing: 0;
+    display: block;
+    }
+
+    .thumbnail img {
+    position: absolute;
+    border-collapse: collapse;
+    border-spacing: 0;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    display: block;
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    }
+
+    p {
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    li {
+      font-family: Raleway;
+      font-size: 14px;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  .caption {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    }
+}
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+  </style>
+</head>
+<body>
+  <table class="table" cellspacing="0" cellpadding="0">
+    <tr id="firstrow">
+        <td>
+          <div id="tools" class="thumbnail text-center">
+            <img id="tools1" src="http://www.healthyblackwoman.com/wp-content/uploads/2013/04/black_woman_computer.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="1">
+                <h3>+ TOOLS</h3>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="navigate" class="thumbnail text-center">
+            <img id="navigate1" src="https://ioneblackdoctor.files.wordpress.com/2012/03/two-doctors-standing-smiling.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="2">
+                <h4>+ NAVIGATING THE HEALTHCARE SYSTEM</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="disparities" class="thumbnail text-center">
+            <img id="disparities1" src="http://www.bet.com/content/betcom/news/health/2011/07/25/african-americans-are-no-strangers-to-health-disparities/_jcr_content/featuredMedia/newsitemimage.custom1200x675x20.dimg/072511-news-health-african-american-health-disparities.jpg" alt="..." class="img-responsive" />
+            <div class="caption" style="background: rgba(69, 139, 0, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ HEALTH DISPARITIES</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="conditions" class="thumbnail text-center">
+            <img id="conditions1" src="http://www.thesaudavoice.com/.a/6a00e55291ee848833014e8c071b81970d-pi" alt="..." class="img-responsive" />
+            <div class="caption" style="background: rgba(244, 209, 86, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ HEALTH CONDITIONS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div id="lifespan" class="thumbnail text-center">
+            <img id="lifespan1" src="http://thyblackman.com/wp-content/uploads/2011/02/blackfamilyblacklove.jpg" alt="..." class="img-responsive" />
+            <div class="caption" style="background: rgba(30, 57, 182, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ HEALTH OVER LIFE SPAN</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+    <tr class="cat1" style="display:none">
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://static1.squarespace.com/static/54ced80ee4b0aa862f974cbf/t/54dbc6b1e4b0d304c26df25e/1423689393780/distant+family+history+indicates+prostate+cancer+risk" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="6">
+                <h4>+ FAMILY HISTORY</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://nowgrenada.com/wp-content/uploads/2014/06/pensioner-elderly-hands-old.jpg" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="7">
+                <h4>+ ADVANCE CARE PLANNING</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.colorectalcanceralliancecentralma.org/images/genetics001.jpg" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="8">
+                <h4>+ ENVIRONMENT AND GENETICS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.health.gov/images/2010/literacy_overview_woman.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ HEALTH LITERACY</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.plasmarugged.com/images/articles/istockphoto_16550290-glossary_lg.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ GLOSSARIES</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+    </tr>
+    <tr class="cat2" style="display:none">
+        <td>
+          <div class="thumbnail text-center">
+            <img src="https://joemull77.files.wordpress.com/2015/02/healthcare-teamwork.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="11">
+                <h4>+ BUILDING A HEALTHCARE TEAM</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.gatewayreservations.com/sites/default/files/imagecache/gallery/trip%20planning%20car%20cropped.png" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="12">
+                <h4>+ PLANNING A VISIT</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://blog.jenamae.com/wp-content/uploads/2013/05/allied-health.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="13">
+                <h4>+ TEAM MEMBERS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="testtube.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="14">
+                <h4>+ DIAGNOSIS AND TESTING OPTIONS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://lowerabdominalpaintreatment.com/wp-content/uploads/2013/12/lower-abdominal-pain-treatment.jpeg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="15">
+                <h4>+ TREATMENT OPTIONS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+    </tr>
+    <tr class="cat6" style="display:none">
+      <td colspan="5">
+        <p>
+          Family history holds key information about your past and clues to your future health. By collecting your family’s health history, you can learn what health problems you may be at increased risk for in the future and how to reduce your risks. Many of your physical traits (such as eye color, hair color, and height) are inherited. So, too, are risks for certain genetic conditions and health problems such as heart disease, diabetes, and some cancers. You may have noticed that some of your relatives are healthier and live longer than other relatives. You may also have noticed that some relatives have the same health problems. By collecting your family’s health history, you can learn what health problems you may be at increased risk for in the future and how to reduce your risks. For instance, people at increased risk for heart disease may be able to reduce their risk through not smoking, regular exercise and diet.
+        </p>
+        <p>
+          It is important to note that none of us knows or has access to complete family history information.  Some families have little or no access to information.  In some families, people remember experiences or diagnoses differently.  Each family works with the information available to them.  However, many families discover that, often, there are one or more members who are the unofficial historian(s) of the family.  This historian can often assist in tracking down information.
+        </p>
+        <p>
+          Several tools have been developed and are available on-line to help families get started with gathering medical histories:
+          <br>
+            <a href="http://www.marchofdimes.org/pregnancy/your-family-health-history.aspx" target="_blank"> Your Family History (March of Dimes)</a>
+          <br>
+            <a href="http://www.marchofdimes.org/404.aspx?a=http%3A//www.marchofdimes.org/files/FamilyHealthHistory.pdf" target="_blank">Family History Form (March of Dimes .pdf file)</a>
+          <br>
+            <a href="http://nsgc.org/p/cm/ld/fid=52" target="_blank">Your Family History - Your Future (NSGC)</a>
+          <br>
+            <a href="https://familyhistory.hhs.gov/FHH/html/index.html" target="_blank">My Family Health Portrait</a>
+        </p>
+      <td>
+    </tr>
+    <tr class="cat7" style="display:none">
+      <td colspan="5">
+        <p>
+          Advance care planning is making decisions about the care you would want to receive if you happen to become unable to speak for yourself. These are your decisions to make, regardless of what you choose for your care, and the decisions are based on your personal values, preferences, and discussions with your loved ones.
+        </p>
+        <p>
+          If you are in an accident or have an illness that leaves you unable to talk about your wishes, who will speak for you? You can tell your family, friends and healthcare providers what your wishes and personal beliefs are about continuing or withdrawing medical treatments at the end of life.
+        </p>
+        <p> Advance care planning includes:
+          <ul>
+            <li>Getting information on the types of life-sustaining treatments that are available.</li>
+            <li>Deciding what types of treatment you would or would not want should you be diagnosed with a life-limiting illness.</li>
+            <li>Sharing your personal values with your loved ones.</li>
+            <li>Completing advance directives to put into writing what types of treatment you would or would not want should you be unable to speak for yourself.</li>
+          </ul>
+        </p>
+        <p> <b> Getting Started: </b>
+          <ul>
+            <li> Think about what kind of treatment you do or do not want in a medical emergency. It might help to talk with your doctor about how your present health conditions might influence your health in the future. </li>
+            <li> Decide if you want a healthcare proxy, someone like a family member or friend who can have authority over a wide range of decisions or a few specific ones in your medical care. </li>
+            <li> Make your wishes known and official with an advance directive that includes a living will and a durable power of attorney for healthcare. </li>
+            <li> Give copies of your advance directive to your healthcare proxy and doctor, and review your advance care planning decisions from time to time. </li>
+          </ul>
+          </p>
+          <p>
+          Several tools have been developed and are available on-line to help families get started with advance care planning:
+          <br>
+            <a href="https://www.nia.nih.gov/health/publication/advance-care-planning" target="_blank"> Advance Care Planning (National Institute on Aging)</a>
+          <br>
+            <a href="http://www.caringinfo.org/i4a/pages/index.cfm?pageid=3277" target="_blank"> Communicating Your Decisions (National Hospice and Palliative Care Organization)</a>
+          <br>
+            <a href="http://www.ama-assn.org/ama/pub/physician-resources/medical-ethics/about-ethics-group/ethics-resource-center/end-of-life-care/advance-care-directives.page" target="_blank">Advance Care Directives (American Medical Association)</a>
+          <br>
+            <a href="http://www.nhdd.org/public-resources" target="_blank">National Healthcare Decisions Day (day dedicated to inspiring, educating, and empowering the public and providers about the importance of advance care planning)</a>
+            <br>
+            <a href="https://www.agingwithdignity.org/catalog/product_info.php?products_id=28" target="_blank">Five Wishes (resources to help youexpress how you want to be treated if you are seriously ill and unable to speak for yourself)</a>
+            <br>
+            <a href="http://www.agingwithdignity.org/voicing-my-choices.php" target="_blank">Voicing My Choices (planning guide for adolescents and young adults to help young people living with a serious illness to communicate their preferences to friends, family, and caregivers) </a>
+        </p>
+      <td>
+    </tr>
+    <tr class="cat8" style="display:none">
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.bastyr.edu/sites/default/files/styles/news_image/public/images/news/EnvironmentalHealth550.jpg?itok=7wua3PVc" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ ENVIRONMENTAL TOXINS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="https://ionehellobeautiful.files.wordpress.com/2014/07/pregnant-black-woman.jpg?w=630" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ FETAL EXPOSURES</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://learn.genetics.utah.edu/content/epigenetics/inheritance/images/DirectExposure.jpg" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ EPIGENETICS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.cumc.columbia.edu/pediatrics/sites/default/files/images/clin/clinintro.jpg"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ GENETICS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+         <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.usnews.com/dims4/USNEWS/1dc9c66/2147483647/resize/652x%3E/quality/85/?url=%2Fcmsmedia%2F50%2Fe1%2F6b40217c4d13962d4c5429725f64%2F141024-rowhouse-editorial.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(69, 116, 122, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="22">
+                <h4>+ SOCIAL DETERMINANTS OF HEALTH</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+    </tr>
+    <tr class="cat22" style="display:none">
+      <td colspan="5">
+      Under construction: more information coming soon!
+      </td>
+    </tr>
+    <tr class="cat11" style="display:none">
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.riseandgrind.com/wp-content/uploads/2010/08/business-handshake-close-up.jpg" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="16">
+                <h4>+ FORM PARTNERSHIPS</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.bluenose.com/wp-content/uploads/2014/12/choose-customer-success-leader.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="17">
+                <h4>+ SELECTING YOUR TEAM</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://blog.jenamae.com/wp-content/uploads/2013/05/allied-health.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="18">
+                <h4>+ BECOMING AN ADVOCATE FOR YOUR FAMILY</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr class="cat16" style="display:none">
+        <td colspan="5">
+          <p>
+            Families have told us that a number of activities have helped them reduce the stressful parts of parenting a child with medical or genetic problems. Reducing the stress allows them to make more room for what every family wants: to enjoy their child. Activities include: forming partnerships with their child’s providers and playing an active role in all levels of decision-making, becoming an expert on their child’s concerns and learning to advocate for those concerns, and getting involved with other families with similar or related concerns.
+          </p>
+        </td>
+      </tr>
+      <tr class="cat17" style="display:none">
+        <td colspan="5">
+          <p>
+            One of the most important challenges of healthcare consumers is the selection of their team of caregivers. Some consumers coordinate, manage, and recruit each member of their family's team of caregivers. These caregivers can include a variety of people. Most teams include medical providers like primary care doctors and specialist doctors. Often, there are speech therapists, physical therapists, occupational therapists, teachers, aides, and/or tutors. Other members might be counselors, psychologists, neuropsychologists, psychiatrists, baby-sitters, grandparents, friends, and neighbors.
+          </p>
+          <p>
+          While families look for caregivers that are highly skilled and accessible, they also search for someone with whom they feel the greatest level of comfortable communication. They look for caregivers they can ask any question and to whom they can communicate their needs without embarrassment. Families seek providers that are comfortable learning as well as teaching. They look for providers with whom they can form partnerships.
+          </p>
+          <p> With so many different knowledge bases and sometimes priorities, members of the team may raise conflicting concerns and recommendations. The family then learns how to weigh all the information, finally choosing what works best for them. One strategy that has worked for many families includes teaming up with other local families. Aside from the benefits of sharing support, these partnerships can help identify areas of concern, encouraging additional resources and expertise within the community.
+          </p>
+          <p> Certainly, no one knows a child better than his/her parents. While doctors and other caregivers may have condition-specific information, only parents can determine if and how that information relates to their child. Over time, many families become experts on their child's diagnosis. Often families take this opportunity to teach their providers what they know. In this way, they become advocates not only for their child, but also for other children.
+          </p>
+        </td>
+      </tr>
+      <tr class="cat12" style="display:none">
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://www.overlookfamilymedicine.atlantichealth.org/sites/6/files/Before%20Your%20AppointmentLarge.jpg" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="19">
+                <h4>+ BEFORE THE APPOINTMENT</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://media.philly.com/images/rsz_istock_000026626794_small.jpg" alt="..." class="img-responsive" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="20">
+                <h4>+ DURING THE APPOINTMENT</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="thumbnail text-center">
+            <img src="http://ak.picdn.net/shutterstock/videos/6619403/preview/stock-footage-black-woman-doctor-smiling-in-office.jpg" align="center"/>
+            <div class="caption" style="background: rgba(103, 27, 93, 0.5)">
+              <a href="#" class="toggler" data-prod-cat="21">
+                <h4>+ AFTER THE APPOINTMENT</h4>
+              </a>
+            </div>
+          </div>
+        </td>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr class="cat19" style="display:none">
+        <td colspan="5">
+          <p>
+            <b>Briefly write down significant medical history. </b>Include episodes of major illness, hospital admissions, ongoing medical or behavioral problems, and medications. This summary can help guide the health care team when reviewing the child's chart.
+          </p>
+          <p>
+          <b> Make a written list of questions and concerns. </b>Leave space to write down the answers. Meetings with the providers should be an open exchange of ideas and information. Do not hesitate to actively participate. Here are some questions that may be good to ask during a genetics appointment:
+            <ul>
+              <li> What is the diagnosis? </li>
+              <li> How accurate is the diagnosis? </li>
+              <li> Are there any tests that can confirm that a person has this condition? </li>
+              <li> What are the characteristics of this condition? </li>
+              <li> Is there a cure or treatment for the condition? </li>
+              <li> Is financial assistance available? </li>
+              <li> What other specialists do I need to see? </li>
+              <li> How likely are my family members to have this condition? </li>
+              <li> Who is this condition passed on from one generation to the next? </li>
+              <li> Where can I get additional information? </li>
+            </ul>
+          <b> If the diagnosis is known, bring a brief explanation of the diagnosis. </b>If available, bring any brochures or relevant articles. These can serve as reminders of the important health concerns.
+          </p>
+          <p> <b> Bring a list of all the health care professionals involved in the patient's care. </b> Include their names, specialties, and contact information. This can help bring together the team and encourage to provide an integrated approach.
+          </p>
+        </td>
+      </tr>
+      <tr class="cat20" style="display:none">
+        <td colspan="5">
+        <p> <b> Tell the doctor the reason for scheduling an appointment and what are the goals for the visit. </b> This will help the doctor to provide the most appropriate care. </p>
+        <p> <b> Discuss all aspects of the patient's care. </b> Often families are hesitant to mention something because they fear that their concerns are unimportant. Seemingly unrelated symptoms or even subtle characteristics may turn out to be key in determining a diagnosis or the best care program. Parents should always tell everything and let the doctor determine what is relevant. </p>
+        <p> <b> Be as clear and descriptive as possible. </b> Do not hesitate to rephrase questions or concerns if you are unsure that your concerns are not being understood. </p>
+        <p> <b> Do not be afraid to ask questions. </b> All questions are important. Sometimes there is a lot going on at the clinic and it may be difficult to remember all the questions.  Bringing a list of questions with room for your notes may be helpful. </p>
+        <p> <b> Before leaving the office, make sure that all questions have been answered and you are comfortable with the information presented. </b> If the provider suggested a diagnosis, prescribed medication, or recommended a treatment, do not hesitate to ask questions or raise concerns. Ask for written materials and ask for definitions or how to spell a word. </p>
+        </td>
+      </tr>
+      <tr class="cat21" style="display:none">
+        <td colspan="5">
+          <p> <b> If there are any remaining of new questions, call. </b> If the provider is not available, another health care professional on the team can help. Counselors, nurses, or social workers may be available to take the patient's calls.
+          </p>
+          <p> <b> Get informed. </b> Subscribe to a newsletter or attend meetings about your family member's condition. Next time you see the doctor, you may be able to share the most recent information on the family member's condition.
+          </p>
+          <p> Whenever possible, ask for and keep copies of exams, tests, and letters from the provider. </p>
+          <p> Other considerations...<br><b> Be informed of health insurance issues.</b> It is helpful to know what are the regulations of your insurance policy, the value of your annual deductible, and whether a procedure requires pre-approval. <br> <b> Protect your privacy. </b> It is important to use judgment to decide who needs to know medical information about you.  Do not give disclosure authorization if there is a doubt. </p>
+        </td>
+      </tr>
+  </table>
+</body>
+<script>
+  $(document).ready(function(){
+      $(".toggler").click(function(e){
+          e.preventDefault();
+          $('.cat'+$(this).attr('data-prod-cat')).toggle();
+      });
+  });
+
+  function myFunction(elmnt){
+    var $divs = $("#tools, #navigate, #disparities, #conditions, #lifespan");
+
+    $($(elmnt).parent().parent().attr("id")).toggle();
+    // $divs.not(($(elmnt).parent().parent().attr("id"))).toggle();
+    // document.write(document.getElementById(elmnt));
+    // document.write(elmnt.attr('id'));
+    // elmnt.attr('id').innerHTML = "-" + this.attr('id').innerHTML;
+  }
+</script>
+</html>
+<!--
+var par = $(this).parent().parent();
+          document.write(divs.not(par.attr("id")).);
+          $(par.attr("id")).show()
+          divs.not(par.attr("id")).hide();
+          var divs = $("#tools, #navigate, #disparities, #conditions, #lifespan"); -->
